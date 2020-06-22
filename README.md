@@ -32,5 +32,3 @@ Exemple:
 
 - [X] Sonde fils noir Semitec 204GT
 - [ ] Extrudeur +
-
-test 4
