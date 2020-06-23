@@ -32,3 +32,8 @@ Exemple:
 
 - [X] Sonde fils noir Semitec 204GT
 - [ ] Extrudeur +
+
+**Opérationnel**
+- [X] 1_Marlin_EXPLO350
+- [ ] 2_Marlin_EXPLO350
+- [ ] 12_Marlin_EXPLO350
