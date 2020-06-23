@@ -24,14 +24,10 @@ Exemple:
 
 ### Etat des évolutions logiciel
 
-**Développé**
-- [X] Sonde fils noir Semitec 204GT
-- [ ] Extrudeur +
-
-**Testé**
-
-- [X] Sonde fils noir Semitec 204GT
-- [ ] Extrudeur +
+| NOM                                | Développement | Testé |
+|:-----------------------------------|:-------------:| :----:|
+| Sonde fils noir Semitec 204GT      | OK            | OK    |
+| Extrudeur +                        | NOK           | NOK   |
 
 **Opérationnel**
 - [X] 1_Marlin_EXPLO350
