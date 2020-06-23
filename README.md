@@ -1,6 +1,13 @@
 # EXPLO350
 
 Modification du logiciel marlin pour les imprimantes 3D EXPLO350 de chez Dagoma
+Le github d'origine est [GitHub](https://github.com/dagoma3d/Marlin-By-Dagoma) .
+Depuis le site https://dist.dagoma.fr/Marlin-Firmwares/ j'ai choisi comme option:
+- Explorer 350
+- Simple Buse
+- Single
+- BL Touch
+- 8 mm
 
 ## Code des versions du logiciel
 
