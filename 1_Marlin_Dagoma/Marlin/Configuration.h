@@ -725,8 +725,8 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 
 // default settings
 
-  #define DEFAULT_AXIS_STEPS_PER_UNIT {80, 80, 400, 98}
-  #define DEFAULT_MAX_FEEDRATE {150, 150, 15, 50}
+  #define DEFAULT_AXIS_STEPS_PER_UNIT {80, 80, 800, 98}
+  #define DEFAULT_MAX_FEEDRATE {150, 150, 8, 50}
   #define DEFAULT_MAX_ACCELERATION {5000, 500, 150, 10000}
 
 #define DEFAULT_ACCELERATION          3000    // X, Y, Z and E acceleration in mm/s^2 for printing moves

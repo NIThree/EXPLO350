@@ -10,14 +10,26 @@ Depuis le site https://dist.dagoma.fr/Marlin-Firmwares/ j'ai choisi comme option
 - 8 mm
 
 J'ai pour ma part, fais évoluer une DiscoEasy vers une Ultimate via le pack evo de dagoma, j'ai donc une carte de DE sous la main que j'ai mis dans l'EXPLO350.
-Après discution, il est plus simple de prendre le code de la DiscoUltimate et d'y appliquer les parametres de l'EXPLO350.
+Après discussion, il est plus simple de prendre le code de la DiscoUltimate et d'y appliquer les parametres de l'EXPLO350.
 
 /!\ ATTENTION /!\
 
-- Le code de la DU à en parametre une sonde appelé "sonde fils noir" chez dagoma
+- Le code de la DU a en parametre une sonde appeléa "sonde fils noir" chez dagoma
 - L'extrudeur + est présent de serie sur les DiscoUltimate et non sur L'EXPLO350
 
 Pour que la version 1_Marlin_EXPLO350 fonction, il vous faudra faire ces 2 modifications.
+
+/!\WARNING/!\
+
+Sur la carte mks, il y a une eeprom dans laquelle est enregistre des valeurs par defaut.
+Après essai, il s'avere que, une fois le telechargement du .hex fait, il modifie le code avec les parametres present dans cette eeprom.
+
+Exemple:
+Dans mon epprom, j'ai la valeur Zpas/mm : 400.
+Sauf que dans mon code, j'ai mis 800.
+Une fois le telechargement fait, il change le 800 en 400.
+Pour remedier a cela, il faut, via l'ecran, modifier la valeur 400 et 800, sauvegarder (sauvegarder config) puis relire l'eeprom (lire config).
+retelechargez le .hex et normalement tout est bon.
 
 ## Code des versions du logiciel
 
@@ -41,7 +53,7 @@ Exemple:
 
 ### Etat des Ã©volutions logiciel
 
-| NOM                                                             | DÃ©veloppement | Teste  |
+| NOM                                                             | Developpement | Teste  |
 |:----------------------------------------------------------------|:--------------:| :-----:|
 | 1 - Application des parametres code EXPLO350 dans code DU       | OK             | OK     |
 | 2 - l'add-on bicouleur                                          | NOK            | NOK    |
