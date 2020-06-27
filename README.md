@@ -51,7 +51,7 @@ Exemple:
 - 2_Marlin_EXPLO350 : Ce marlin est à prendre si vous avez l'add-on bicouleur sur l'EXPLO350
 - 12_Marlin_EXPLO350 : Ce marlin est à prendre si vous avez une carte de DiscoEasy sur votre EXPLORER350 ET l'add-on bicouleur sur l'EXPLO350
 
-### Etat des évolutions logiciel
+### Etat des evolutions logiciel
 
 | NOM                                                             | Developpement | Teste  |
 |:----------------------------------------------------------------|:--------------:| :-----:|
@@ -59,7 +59,7 @@ Exemple:
 | 2 - l'add-on bicouleur                                          | NOK            | NOK    |
 
 
-**Opérationnel**
+**Operationnel**
 - [X] 1_Marlin_EXPLO350
 - [ ] 2_Marlin_EXPLO350
 - [ ] 12_Marlin_EXPLO350
