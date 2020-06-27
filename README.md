@@ -9,6 +9,16 @@ Depuis le site https://dist.dagoma.fr/Marlin-Firmwares/ j'ai choisi comme option
 - BL Touch
 - 8 mm
 
+J'ai pour ma part, fais �voluer une DiscoEasy vers une Ultimate via le pack evo de dagoma, j'ai donc une carte de DE sous la main que j'ai mis dans l'EXPLO350.
+Apr�s discution, il est plus simple de prendre le code de la DiscoUltimate et d'y appliquer les parametres de l'EXPLO350.
+
+/!\ ATTENTION /!\
+
+- Le code de la DU � en parametre une sonde appel� "sonde fils noir" chez dagoma
+- L'extrudeur + est pr�sent de serie sur les DiscoUltimate et non sur L'EXPLO350
+
+Pour que la version 1_Marlin_EXPLO350 fonction, il vous faudra faire ces 2 modifications.
+
 ## Code des versions du logiciel
 
 Chaque dossier source ou .hex est composé de cette manière:
@@ -20,21 +30,22 @@ Chaque dossier source ou .hex est composé de cette manière:
 
 Chaque Y indique que la version comporte l'une de ces fonctions:
 
-- 1 - Sonde fils noir Semitec 204GT
-- 2 - Extrudeur +
+- 1 - Application des parametres code EXPLO350 dans code DU
+- 2 - Add-on Bi couleur
 
 Exemple:
 
-- 1_Marlin_EXPLO350 : Ce marlin est à prendre si vous avez une sonde avec les fils noir sur l'EXPLO350
-- 2_Marlin_EXPLO350 : Ce marlin est à prendre si vous avez l'extrudeur + de Dagoma sur l'EXPLO350
-- 12_Marlin_EXPLO350 : Ce marlin est à prendre si vous avez une sonde avec les fils noir ET l'extrudeur + sur l'EXPLO350
+- 1_Marlin_EXPLO350 : Ce marlin est à prendre si vous avez une carte de DiscoEasy sur votre EXPLORER350
+- 2_Marlin_EXPLO350 : Ce marlin est à prendre si vous avez l'add-on bicouleur sur l'EXPLO350
+- 12_Marlin_EXPLO350 : Ce marlin est à prendre si vous avez une carte de DiscoEasy sur votre EXPLORER350 ET l'add-on bicouleur sur l'EXPLO350
 
 ### Etat des évolutions logiciel
 
-| NOM                                    | Développement | Testé |
-|:---------------------------------------|:-------------:| :----:|
-| 1 - Sonde fils noir Semitec 204GT      | OK            | OK    |
-| 2 - Extrudeur +                        | NOK           | NOK   |
+| NOM                                                             | Développement | Teste  |
+|:----------------------------------------------------------------|:--------------:| :-----:|
+| 1 - Application des parametres code EXPLO350 dans code DU       | OK             | OK     |
+| 2 - l'add-on bicouleur                                          | NOK            | NOK    |
+
 
 **Opérationnel**
 - [X] 1_Marlin_EXPLO350
